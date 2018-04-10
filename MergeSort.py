@@ -1,3 +1,4 @@
+# O(nlogn)
 def merge_sort(arr, l, r):
     print(arr)
     if len(arr) <= 1:

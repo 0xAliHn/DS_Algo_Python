@@ -1,14 +1,14 @@
-# Returns index of x in arr if present, else -1
-def binarySearch (arr, x):
-    if len(arr) == 0:
+# O(log(n))
+def binarysearch (ar, item):
+    if len(ar) == 0:
         return False
-    mid = len(arr)//2
-    if arr[mid] == x:
+    mid = len(ar) // 2
+    if ar[mid] == item:
         return True
-    if arr[mid] < x:
-        return binarySearch(arr[mid+1:], x)
-    elif arr[mid] > x:
-        return binarySearch(arr[:mid], x)
+    if ar[mid] < item:
+        return binarysearch(ar[mid + 1:], item)
+    elif ar[mid] > item:
+        return binarysearch(ar[:mid], item)
     return False
 
 
@@ -17,5 +17,5 @@ arr = [1, 2, 3, 5, 8, 22, 34, 42, 87, 103]
 x = 42
 
 # Function call
-result = binarySearch(arr, x)
+result = binarysearch(arr, x)
 print(result)
