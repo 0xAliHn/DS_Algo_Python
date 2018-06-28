@@ -9,7 +9,7 @@ def fib_recursive(n):
 print(fib_recursive(40))
 
 
-# O(n)
+# O(n)  Efficient for larger input
 def fib_memoize_or_top_down(n, mem):
     if mem[n] is not 0:
         return mem[n]
@@ -25,7 +25,7 @@ mem[2] = 1
 print(fib_memoize_or_top_down(n, mem))
 
 
-# O(n)
+# O(n)  For simplicity and small input sizes
 def fib_bottom_up(n):
     mem = [0] * (n+1)
     mem[1] = 1
