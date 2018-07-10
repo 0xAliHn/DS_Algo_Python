@@ -5,6 +5,7 @@ class Node:
         self.val = val
 
 
+# O(logn), O(n)
 def insertnode(root, val):
     while root:
         if val > root.val:
@@ -23,6 +24,7 @@ def insertnode(root, val):
             return root
 
 
+# O(1), O(logn), O(n)
 def searchnode(root, val):
     while root:
         if val > root.val:

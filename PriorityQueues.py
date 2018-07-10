@@ -2,6 +2,7 @@ class PriorityQueue:
     def __init__(self):
         self.qlist = []
 
+    # O(logn)
     def insert(self, i, p):
         if len(self.qlist) == 0:
             return self.qlist.append((i, p))
@@ -10,6 +11,7 @@ class PriorityQueue:
                 return self.qlist.insert(j, (i, p))
         return self.qlist.append((i, p))
 
+    # O(1)
     def pop(self):
         if len(self.qlist) == 0:
             return "Queue Empty"
