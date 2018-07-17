@@ -1,5 +1,5 @@
 # Tabulation or Bottom-up approach
-# O(n)
+# O(n*m)
 
 
 def knapsack(m, wt, cost, n):
@@ -12,8 +12,10 @@ def knapsack(m, wt, cost, n):
                 v[i][w] = max(v[i - 1][w], cost[i] + v[i - 1][w - wt[i]])
             else:
                 v[i][w] = v[i - 1][w]
+    # Print maximum profit
     print(v[i][w])
 
+    # Print the selected items index
     for i in range(n, 0, -1):
         if v[i][w] != v[i - 1][w]:
             print(i)
