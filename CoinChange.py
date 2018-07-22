@@ -3,6 +3,7 @@
 # 2. Overlapping subproblems (3 approach)
 
 
+# Find the minimum coin required to make the value and print items index
 # This solution using Optimal substructures O(n * m)
 def coin_change1(coin, n, m):
     coin_index = 0
@@ -23,6 +24,7 @@ def coin_change1(coin, n, m):
         c[j] = min
         s[j] = coin_index
 
+    # Print the items index
     while m > 0:
         print(coin[s[m]])
         m = m - coin[s[m]]
@@ -30,8 +32,8 @@ def coin_change1(coin, n, m):
     return c[j]
 
 
+# Find number of ways to make the value (Two approaches)
 # This solution using Overlapping subproblems (Tabulation/Bottom-up and Recursive with state)
-
 # Tabulation/Bottom-up  O(n * m)
 def coin_change2(coin, n, m):
     # v = [[0]*(m+1)]*(n+1)
@@ -70,7 +72,6 @@ def coin_change3(coin, n, m):
     return v[m]
 
 
-# Find the total number of ways to make the amount m
 coin = [0, 1, 2, 5]
 n = len(coin)
 m = 6
