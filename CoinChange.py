@@ -1,3 +1,9 @@
+# Important References
+# https://www.geeksforgeeks.org/dynamic-programming-set-7-coin-change/
+# https://www.youtube.com/watch?v=tduLvFbqRXE
+# https://www.youtube.com/watch?v=arSCL-F2ZZc
+
+
 # We can implement coin change problem using both dp mechanism
 # 1. Optimal substructures
 # 2. Overlapping subproblems (3 approach)

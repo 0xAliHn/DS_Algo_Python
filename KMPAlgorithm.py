@@ -1,3 +1,8 @@
+# Important References
+# https://www.geeksforgeeks.org/searching-for-patterns-set-2-kmp-algorithm/
+# https://www.youtube.com/watch?v=V5-7GzOfADQ
+
+
 # O(n+m)
 def build_prefix_table(pat):
     length = len(pat)
@@ -42,3 +47,4 @@ def kmp(str, pat):
 
 
 print(kmp("ababcabcabababd", "ababd"))
+

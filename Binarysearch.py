@@ -1,3 +1,7 @@
+# Important References
+# https://www.geeksforgeeks.org/the-ubiquitous-binary-search-set-1/
+
+
 # time O(logn) space O(logn)
 def binarysearch(ar, item):
     if len(ar) == 0:
@@ -51,4 +55,3 @@ print(result)
 result = binarysearch_more_optimize(arr, 0, len(arr) - 1, x)
 print(result)
 
-# https://www.geeksforgeeks.org/the-ubiquitous-binary-search-set-1/

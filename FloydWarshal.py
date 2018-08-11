@@ -1,4 +1,8 @@
-# Python Program for Floyd Warshall Algorithm
+# Important References
+# https://www.youtube.com/watch?v=oNI0rf2P9gE
+# https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/
+
+# O(V^2) solution
 
 # Number of vertices in the graph
 V = 4
@@ -12,23 +16,9 @@ INF = 99999
 def floydWarshall(graph):
     """ dist[][] will be the output matrix that will finally
         have the shortest distances between every pair of vertices """
-    """ initializing the solution matrix same as input graph matrix
-    OR we can say that the initial values of shortest distances
-    are based on shortest paths considering no 
-    intermediate vertices """
     dist = list(map(lambda i: list(map(lambda j: j, i)), graph))
     print(dist)
 
-    """ Add all vertices one by one to the set of intermediate
-     vertices.
-     ---> Before start of an iteration, we have shortest distances
-     between all pairs of vertices such that the shortest
-     distances consider only the vertices in the set 
-    {0, 1, 2, .. k-1} as intermediate vertices.
-      ----> After the end of a iteration, vertex no. k is
-     added to the set of intermediate vertices and the 
-    set becomes {0, 1, 2, .. k}
-    """
     for k in range(V):
 
         # pick all vertices as source one by one
@@ -56,7 +46,6 @@ def printSolution(dist):
                 print("")
 
 
-# Driver program to test the above program
 # Let us create the following weighted graph
 """
             10
@@ -71,6 +60,4 @@ graph = [[0, 5, INF, 10],
          [INF, 0, 3, INF],
          [INF, INF, 0, 1],
          [INF, INF, INF, 0]]
-# Print the solution
 floydWarshall(graph)
-# This code is contributed by Nikhil Kumar Singh(nickzuck_007)

@@ -1,3 +1,9 @@
+# Important References
+# https://www.geeksforgeeks.org/longest-common-subsequence/
+# https://www.dyclassroom.com/dynamic-programming/longest-common-subsequence
+# https://www.youtube.com/watch?v=sSno9rV8Rhg
+
+
 # A naive recursive approach
 # O(2*n)
 def LCS(X, Y, i, j):

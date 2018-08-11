@@ -1,3 +1,11 @@
+# Important References
+# https://www.geeksforgeeks.org/longest-increasing-subsequence/
+# https://www.youtube.com/watch?v=E6us4nmXTHs     //For finding length
+# https://www.youtube.com/watch?v=SZByPn0deMY     //For printing sequence
+# https://www.youtube.com/watch?v=S9oUiVYEq7E     //For nlogn solution
+# https://www.geeksforgeeks.org/longest-monotonically-increasing-subsequence-size-n-log-n/
+
+
 # Tabulation/bottom-up approach
 # O(n*n)
 def LIS(arr):
@@ -83,9 +91,3 @@ arr = [10, 22, 9, 33, 21, 50, 41, 60]
 print("1. Length of lis is", LIS(arr))
 print("2. Length of lis is", lis_otimize(arr))
 
-# Ref
-# https://www.geeksforgeeks.org/longest-increasing-subsequence/
-# https://www.youtube.com/watch?v=E6us4nmXTHs     //For finding length
-# https://www.youtube.com/watch?v=SZByPn0deMY     //For printing sequence
-# https://www.youtube.com/watch?v=S9oUiVYEq7E     //For nlogn solution
-# https://www.geeksforgeeks.org/longest-monotonically-increasing-subsequence-size-n-log-n/

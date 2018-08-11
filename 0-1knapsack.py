@@ -1,7 +1,11 @@
+# Important References
+# https://www.geeksforgeeks.org/knapsack-problem/
+# https://www.dyclassroom.com/dynamic-programming/0-1-knapsack-
+# https://www.youtube.com/watch?v=zRza99HPvkQ
+
+
 # Tabulation or Bottom-up approach
 # O(n*m)
-
-
 def knapsack(m, wt, cost, n):
     # v = [[0]*(m+1)]*(n+1)
     v = [[0 for _ in range(m + 1)] for _ in range(n + 1)]

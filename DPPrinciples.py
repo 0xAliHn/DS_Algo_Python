@@ -1,6 +1,11 @@
-# Overlapping substructures: 3 approach
+# Important References
+# https://www.geeksforgeeks.org/overlapping-subproblems-property-in-dynamic-programming-dp-1/
+# https://www.youtube.com/watch?v=5dRGRueKU3M
 
-# O(n^2)
+
+# Overlapping subproblems: 3 approach
+
+# O(2^n)
 def fib_recursive(n):
     if n == 1 or n == 2:
         return 1
@@ -42,8 +47,3 @@ def fib_bottom_up(n):
 
 
 print(fib_bottom_up(40))
-
-
-
-
-

@@ -1,3 +1,7 @@
+# Important References
+# https://www.geeksforgeeks.org/heap-sort/
+
+
 # To heapify subtree rooted at index i.
 # n is size of heap
 def heapify(heap, heap_size, i):
@@ -46,4 +50,3 @@ if __name__ == "__main__":
     arr = [12, 11, 13, 5, 6, 7]
     heapsort(arr)
     print("Sorted array is", *arr)
-
