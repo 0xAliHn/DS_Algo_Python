@@ -13,7 +13,7 @@ def fib_recursive(n):
         return fib_recursive(n-1) + fib_recursive(n-2)
 
 
-print(fib_recursive(40))
+print(fib_recursive(20))
 
 
 # O(n)  Efficient for larger input
@@ -46,4 +46,4 @@ def fib_bottom_up(n):
     return mem[n]
 
 
-print(fib_bottom_up(40))
+print(fib_bottom_up(20))
